@@ -10,17 +10,65 @@
 <body>
     <div class="page-container">
         <div class="image">
+            <div class="logo">
+                <img src="./odin-logo.png" height="150px"> 
+                <h2>ODIN</h2>
+            </div>
+            <div class="credit">
+                Image credit:
+                <a href="https://unsplash.com/@mischievous_penguins">Casey Horner</a>. Image uploaded to 
+                <a href="https://unsplash.com/photos/timelapse-photography-of-warped-lines-RmoWqDCqN2E">Unsplash</a>.
+            </div>
         </div>
         <div class="form">
+            <section class="description">
+                <p>
+                    This is not a real online service! You know you need something like
+                    this in your life to help you realize your deepest dreams. Sign up
+                    <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </section>
             <form action>
-                <ul>
-                  <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name"/>
-                </ul>
-              </form>
+                <div class="form-container">
+                    <p>Let's do this!</p>
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div class="form-cell">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-cell">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="form-cell">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" name="confirm_password">
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" id="create-account">Create Account</button>
+            </form>
+            <p class="log-in">Already have an account? <a href="#">Log In</a></p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
