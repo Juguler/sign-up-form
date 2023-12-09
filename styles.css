@@ -1,11 +1,115 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+}
 .page-container {
     display:flex;
     flex-direction: row;
     min-height: 100vh;
 }
 .image{ 
-    background-position: center center;
+    background-position: center;
     background-image: url(./background-image.jpeg);
     background-size: cover;
+    display:flex;
     flex:1;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,'Times New Roman', Times, serif;
+  }
+.logo {
+    font-family: 'Norse Bold';
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    width:450px;
+    color: white;
+}
+.logo h2{
+    margin-top:150px;
+}
+.credit {
+    font-size: 0.9rem;
+    color: white;
+}
+.credit a {
+    color: #808080;
+    text-decoration: none;
+}
+.form-container {
+    background-color: #FFF;
+    padding: 2rem 2rem;
+    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.description {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 90%;
+}
+fieldset {
+    border: none;
+    display: flex;
+    gap: 3rem;
+}
+.form-cell {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.form-cell label {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+form input {
+    border: 1px solid #D6D9DC;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+}
+.log-in a {
+    color: #596D48;
+    text-decoration: none;
+}
+.log-in {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 32px;
+    margin-left: 250px;
+}
+#create-account {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 32px;
+    border: none;
+    background-color: #596D48;
+    padding: 12px 48px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
